@@ -12,4 +12,5 @@ Mutual information theory assessed coordination between adjacent joints.
 
 Inputs:
 - Number of participants: 8 (each two trial)
+- IMUs: X-Sense | Sampling Frequency: 100 Hz
 - IMU placements: Sternum, Sacrum, Shoude (R), Elbow (R), Pelvis (R), Thigh (R), Shank (R)
