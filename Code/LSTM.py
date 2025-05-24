@@ -14,12 +14,12 @@ from sklearn.metrics import classification_report, accuracy_score, precision_sco
 from sklearn.preprocessing import StandardScaler
 
 # -------------------------
-# Load and Prepare Data
+# Load Dataset
 # -------------------------
-# data = pd.read_csv('your_data_file.csv')
-# Replace above with:
-# data = pd.read_excel('path_to_your_excel_file.xlsx')
+file_path = '/content/drive/MyDrive/NCB-Armin/Fatigue analysis/MSc_Project/EMG_MainProject/Results/MLFeatures.xlsx'
+data = pd.read_excel(file_path)
 
+# Extract features and labels
 features = data.iloc[:, 2:182].values  # Columns 3 to 182
 subject = data['Participant'].values
 labels = data['RPE'].values
